@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>react basic 2</title>
+    <style></style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- 리액트 사용을 위한 cdn 연결 -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+      const item = {
+        name: "react",
+        email: "js@react.com",
+        phone: "02-1234-1234",
+      };
+
+      function user(item) {
+        return `${item.name} / ${item.email} / ${item.phone}`;
+      }
+
+      const output = <h1>Hello, {user(item)}</h1>;
+
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(output);
+    </script>
+  </body>
+</html>
