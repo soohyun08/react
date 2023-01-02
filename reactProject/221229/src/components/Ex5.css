@@ -1,0 +1,26 @@
+.container {
+  width: 50vw;
+  margin: 10px auto;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  gap: 1vw;
+}
+
+.container article {
+  width: 150px;
+  height: 100px;
+}
+.orange {
+  background-color: orange;
+}
+.teal {
+  background-color: teal;
+  color: #fff;
+}
+.lightcoral {
+  background-color: lightcoral;
+}
+.lightskyblue {
+  background-color: lightskyblue;
+}
