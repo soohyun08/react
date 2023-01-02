@@ -1,5 +1,5 @@
 import React from "react";
-import BusinessList from "../BSN/BusinessList";
+import BusinessList from "./BusinessList";
 import "./style.css";
 
 // 최상위 컴포넌트
