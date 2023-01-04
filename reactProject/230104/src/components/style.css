@@ -1,0 +1,23 @@
+.wrapper {
+  width: 70vw;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #000;
+  display: flex;
+  flex-wrap: wrap;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  margin: 10px;
+}
+.size {
+  width: 150px;
+  height: 150px;
+  border-radius: 20%;
+  margin: 20px;
+}
+.bg {
+  background-color: maroon;
+}
