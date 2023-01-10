@@ -1,30 +1,5 @@
 import React, { useState } from "react";
-import styled from "styled-components";
-
-const ImgSearch = styled.form`
-  text-align: center;
-  padding: 30px;
-
-  input[type="text"] {
-    width: 160px;
-    padding: 4px;
-    box-sizing: border-box;
-    outline: none;
-    border: 1px solid tomato;
-  }
-  button {
-    cursor: pointer;
-    width: 50px;
-    background-color: tomato;
-    color: #fff;
-    border: none;
-    padding: 3px;
-    vertical-align: middle;
-    &:hover {
-      background-color: #000;
-    }
-  }
-`;
+import { ImgSearch } from "../assets/GalleryStyle";
 
 function GallerySearch({ onSearch }) {
   const [txt, setTxt] = useState("");

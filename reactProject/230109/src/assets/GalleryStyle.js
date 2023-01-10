@@ -1,11 +1,85 @@
 import styled from "styled-components";
 
 // Gallery.js
+export const Container = styled.div`
+  width: ${(props) => props.width || "90vw"};
+  margin: 0 auto;
+  border: 1px solid #000;
+`;
 
 // GallerySearch.js
+export const ImgSearch = styled.form`
+  text-align: center;
+  padding: 30px;
+
+  input[type="text"] {
+    width: 160px;
+    padding: 4px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid tomato;
+  }
+  button {
+    cursor: pointer;
+    width: 50px;
+    background-color: tomato;
+    color: #fff;
+    border: none;
+    padding: 3px;
+    vertical-align: middle;
+    &:hover {
+      background-color: #000;
+    }
+  }
+`;
 
 // GalleryList.js
+export const GalleryListContainer = styled.div`
+  .my-masonry-grid {
+    display: flex;
+    margin-left: -30px; /* gutter size offset */
+    width: auto;
+  }
+  .my-masonry-grid_column {
+    padding-left: 30px; /* gutter size */
+    background-clip: padding-box;
+    /* background-color: orange; */
+  }
+  /* Style your items */
+  .my-masonry-grid_column > section {
+    /* change div to reference your elements you put in <Masonry> */
+    background: #efefef;
+    margin-bottom: 30px;
+  }
+`;
+
+export const breakpointColumnsObj = {
+  default: 3,
+  1400: 3,
+  960: 2,
+  414: 1,
+};
 
 // GalleryItem.js
-
-export default GalleryStyle;
+export const GalleryItemBox = styled.section`
+  border: 1px solid #222;
+  padding: 10px;
+  margin: 20px 10px;
+  img {
+    width: 100%;
+  }
+  h2 {
+    font-size: 1.2em;
+    color: maroon;
+    margin: 10px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.95em;
+    li {
+      margin-bottom: 5px;
+    }
+  }
+`;

@@ -1,14 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import styled from "styled-components";
 import GalleryList from "./GalleryList";
 import GallerySearch from "./GallerySearch";
-
-const Container = styled.div`
-  width: ${(props) => props.width || "90vw"};
-  margin: 0 auto;
-  border: 1px solid #000;
-`;
+import { Container } from "../assets/GalleryStyle";
 
 function Gallery() {
   const [error, setError] = useState(null);
