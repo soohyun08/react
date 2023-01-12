@@ -1,5 +1,4 @@
 import "../assets/styles/fonts.css";
-import "./main.scss";
 
 import Logo from "./Logo";
 import HeaderNav from "../components/HeaderNav";

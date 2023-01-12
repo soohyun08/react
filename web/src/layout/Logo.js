@@ -13,7 +13,7 @@ function Logo(props) {
   return (
     <Container>
       <h1>
-        <a href="#">
+        <a>
           <img src={path + "images/Interior.png"} alt="logo" />
         </a>
       </h1>

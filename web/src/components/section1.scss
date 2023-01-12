@@ -9,7 +9,7 @@ $XCenter: translateX(-50%);
 $YCenter: translateY(-50%);
 
 .section1 {
-  margin: 90px 0 130px;
+  margin: 80px 0 130px;
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal {
     top: 53%;
@@ -63,7 +63,7 @@ $YCenter: translateY(-50%);
       position: absolute;
       top: 180px;
       left: 470px;
-      z-index: 9999;
+      z-index: 99;
       line-height: 1.2;
       h2 {
         font-size: 2.2em;

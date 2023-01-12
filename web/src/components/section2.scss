@@ -34,8 +34,9 @@
       position: absolute;
       top: 10vh;
       left: 5vw;
-      color: #555;
+      color: rgb(68, 68, 68);
       line-height: 1.2;
+      font-weight: 400;
       .section2Dots {
         background: url(../assets/images/bg_dot_gray.png) no-repeat 50% /
           contain;
@@ -48,10 +49,13 @@
       h2 {
         font-size: 2.2em;
         margin-bottom: 20px;
+        strong {
+          font-weight: 600;
+        }
       }
       p {
-        font-size: 1.2em;
-        font-weight: 300;
+        font-size: 1.1em;
+        font-weight: 400;
       }
     }
     .btn {

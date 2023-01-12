@@ -1,22 +1,24 @@
-import React from "react";
+import "./companyInfo.scss";
 import CompanyInfoSubCI from "./CompanyInfoSub/CompanyInfoSubCI";
 import CompanyInfoSubCV from "./CompanyInfoSub/CompanyInfoSubCV";
 
-const companyInfoLis1 = [
+/* const companyInfoLis1 = [
   { id: 1, name: "회사소개", subMenu: <CompanyInfoSubCI /> },
   { id: 2, name: "회사비전", subMenu: <CompanyInfoSubCV /> },
-];
+]; */
 
 const companyInfoLis2 = [
+  { id: 1, name: "회사소개" },
+  { id: 2, name: "회사비전" },
   { id: 3, name: "회사연혁" },
   { id: 4, name: "조직소개" },
   { id: 5, name: "오시는길" },
 ];
-function CompanyInfo(props) {
+function CompanyInfo() {
   return (
     <>
-      <ul>
-        {companyInfoLis1.map((item) => (
+      <ul className="CompanyInfoUl">
+        {/*         {companyInfoLis1.map((item) => (
           <li key={item.id}>
             <a href="#">
               {item.name}
@@ -26,7 +28,7 @@ function CompanyInfo(props) {
             </a>
             {item.subMenu}
           </li>
-        ))}
+        ))} */}
 
         {companyInfoLis2.map((item) => (
           <li key={item.id}>

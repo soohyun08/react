@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import HeaderIconNav from "./HeaderIconNav";
+import { useState } from "react";
 
 const Container = styled.div`
   width: 19%;
@@ -10,9 +12,18 @@ const Container = styled.div`
   a {
     margin: 0 15px 0 7px;
   }
+  svg {
+    cursor: pointer;
+  }
 `;
 
-function HeaderIconBar(props) {
+function HeaderIconBar() {
+  const [isShow, setIsShow] = useState(false);
+
+  function onToggle() {
+    setIsShow(!isShow);
+  }
+
   return (
     <Container>
       <a href="#" id="toggle_search">
@@ -27,7 +38,7 @@ function HeaderIconBar(props) {
         </svg>
       </a>
 
-      <a href="#" id="toggle_btn">
+      <div className="menuToggle" onClick={onToggle}>
         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24.5">
           <g fill="none" stroke="#000" stroke-width="3">
             <path data-name="선 3" d="M0 23h26" />
@@ -35,7 +46,9 @@ function HeaderIconBar(props) {
             <path data-name="선 5" d="M0 1.5h26" />
           </g>
         </svg>
-      </a>
+      </div>
+
+      {isShow && <HeaderIconNav />}
     </Container>
   );
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import "./news.scss";
 
 const newsLis = [
   { id: 1, name: "고객센터" },
@@ -11,7 +11,7 @@ const newsLis = [
 function News(props) {
   return (
     <div>
-      <ul>
+      <ul className="newsUl">
         {newsLis.map((item) => (
           <li key={item.id}>
             <a href="#">{item.name}</a>

@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import "./section3.scss";
 
 const reviews = [
   {
@@ -44,89 +44,10 @@ const reviews = [
   },
 ];
 
-const Container = styled.div`
-  width: 70%;
-  margin: 0 auto 60px;
-
-  .bgGray {
-    width: 100%;
-    height: 140vh;
-    background-color: #f8f9fa;
-    position: absolute;
-    top: 190vh;
-    left: 0;
-  }
-  .section3Txt {
-    position: relative;
-    .section3Dots {
-      border: 1px solid red;
-      background: url(../assets/images/bg_dot_gray.png) no-repeat 50% / contain;
-      width: 220px;
-      height: 220px;
-      position: absolute;
-      top: -12vh;
-      left: -13vh;
-      z-index: 9;
-    }
-    h2 {
-      margin: 0 auto;
-      font-size: 2.2em;
-      height: 100px;
-      span {
-        display: block;
-        font-size: 0.5em;
-        margin-bottom: 10px;
-      }
-      strong {
-        font-weight: 600;
-        padding-left: 10px;
-      }
-    }
-  }
-
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    li {
-      width: 300px;
-      height: 17vw;
-      position: relative;
-      justify-content: center;
-      margin: 20px 0;
-      z-index: 9999;
-      transition: 0.2s;
-      cursor: pointer;
-      &:hover {
-        transform: translateY(-10px);
-        color: #b9af9f;
-      }
-      img {
-        width: 300px;
-      }
-      p {
-        width: 260px;
-        height: 90px;
-        background-color: #fff;
-        position: absolute;
-        bottom: 0;
-        left: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-left: 20px;
-        span {
-          padding: 15px 0 0;
-        }
-      }
-    }
-  }
-`;
-
 function Section3() {
   const path = process.env.PUBLIC_URL;
   return (
-    <Container>
+    <article className="section3">
       <div className="bgGray"></div>
       <div className="section3Txt">
         <div className="section3Dots"></div>
@@ -147,7 +68,7 @@ function Section3() {
           </li>
         ))}
       </ul>
-    </Container>
+    </article>
   );
 }
 
