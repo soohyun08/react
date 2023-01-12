@@ -1,5 +1,5 @@
-import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   width: 23%;
@@ -8,14 +8,14 @@ const Container = styled.div`
   float: left;
 `;
 
-function Logo(props) {
+function Logo() {
   const path = process.env.PUBLIC_URL;
   return (
     <Container>
       <h1>
-        <a>
+        <Link to="/">
           <img src={path + "images/Interior.png"} alt="logo" />
-        </a>
+        </Link>
       </h1>
     </Container>
   );
