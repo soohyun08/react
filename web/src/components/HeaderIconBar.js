@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-  margin: 15px auto 0;
-  grid-row: 2/3;
-  grid-column: 3/4;
+  width: 19%;
+  float: left;
+  height: 44px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  align-items: flex-end;
   a {
-    margin: 0 15px;
+    margin: 0 15px 0 7px;
   }
 `;
 

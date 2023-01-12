@@ -1,17 +1,26 @@
 .section6 {
   width: 100%;
   height: 400px;
-  background-color: #ddd;
+  background: url(../assets/images/section6Bg.jpg) no-repeat 50% / cover;
   display: grid;
   place-content: center;
   .section6Txt {
     display: grid;
     place-content: center;
-    width: 55vw;
+    width: 48vw;
     height: 35vh;
     background-color: #fff;
     text-align: center;
     line-height: 1.9;
+    position: relative;
+    .section6Dots {
+      background: url(../assets/images/bg_dot_gray.png) no-repeat 50% / contain;
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: -1vh;
+      left: 15vh;
+    }
     h3 {
       font-size: 2.3em;
       strong {

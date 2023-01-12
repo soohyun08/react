@@ -47,23 +47,43 @@ const reviews = [
 const Container = styled.div`
   width: 70%;
   margin: 0 auto 60px;
-  /* background: url(path + "/images/bg_dot_gray.png") no-repeat -40px -50px /
-    200px; */
-  padding-top: 30px;
-  h2 {
-    margin: 0 auto;
-    font-size: 2.2em;
-    height: 100px;
-    span {
-      display: block;
-      font-size: 0.5em;
-      margin-bottom: 10px;
+
+  .bgGray {
+    width: 100%;
+    height: 140vh;
+    background-color: #f8f9fa;
+    position: absolute;
+    top: 190vh;
+    left: 0;
+  }
+  .section3Txt {
+    position: relative;
+    .section3Dots {
+      border: 1px solid red;
+      background: url(../assets/images/bg_dot_gray.png) no-repeat 50% / contain;
+      width: 220px;
+      height: 220px;
+      position: absolute;
+      top: -12vh;
+      left: -13vh;
+      z-index: 9;
     }
-    strong {
-      font-weight: 600;
-      padding-left: 10px;
+    h2 {
+      margin: 0 auto;
+      font-size: 2.2em;
+      height: 100px;
+      span {
+        display: block;
+        font-size: 0.5em;
+        margin-bottom: 10px;
+      }
+      strong {
+        font-weight: 600;
+        padding-left: 10px;
+      }
     }
   }
+
   ul {
     display: flex;
     flex-wrap: wrap;
@@ -76,8 +96,10 @@ const Container = styled.div`
       margin: 20px 0;
       z-index: 9999;
       transition: 0.2s;
+      cursor: pointer;
       &:hover {
         transform: translateY(-10px);
+        color: #b9af9f;
       }
       img {
         width: 300px;
@@ -101,14 +123,18 @@ const Container = styled.div`
   }
 `;
 
-function Section3(props) {
+function Section3() {
   const path = process.env.PUBLIC_URL;
   return (
     <Container>
-      <h2>
-        <span>봄시즌 우리집 꾸미기</span>고객들의
-        <strong>집꾸밈 이야기</strong>
-      </h2>
+      <div className="bgGray"></div>
+      <div className="section3Txt">
+        <div className="section3Dots"></div>
+        <h2>
+          <span>봄시즌 우리집 꾸미기</span>고객들의
+          <strong>집꾸밈 이야기</strong>
+        </h2>
+      </div>
 
       <ul>
         {reviews.map((item) => (

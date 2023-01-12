@@ -4,6 +4,7 @@ function Section6(props) {
   return (
     <div className="section6">
       <div className="section6Txt">
+        <div className="section6Dots"></div>
         <h3>
           고객상담 및 <strong>인테리어 문의</strong>
         </h3>

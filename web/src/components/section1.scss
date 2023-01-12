@@ -1,0 +1,121 @@
+$bg-contain: no-repeat 50% / contain;
+$bg-cover: no-repeat 50% / cover;
+$color-beige: #a0937d;
+$color-beige-hover: #b9af9f;
+$bg-beige-hover: #e6e3dd;
+$color-green: #3a6351;
+$objCenter: translate(-50%, -50%);
+$XCenter: translateX(-50%);
+$YCenter: translateY(-50%);
+
+.section1 {
+  margin: 90px 0 130px;
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    top: 53%;
+    bottom: 0;
+    left: 440px;
+    width: 150px;
+  }
+  .swiper-pagination-bullet {
+    background-color: #fff;
+    width: 13px;
+    height: 13px;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    margin: 0 10px;
+  }
+  .swiper-pagination-bullet-active {
+    width: 50px;
+    border-radius: 10px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 54%;
+    padding: 0 5px;
+  }
+  .swiper-button-prev {
+    left: 570px;
+    right: 0;
+  }
+  .swiper-button-next {
+    left: 600px;
+    right: 0;
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    padding: 10px;
+    font-size: 15px;
+    color: #fff;
+  }
+  .swiper-slide {
+    img {
+      width: 100%;
+    }
+  }
+  article {
+    position: relative;
+    .txt {
+      color: #fff;
+      position: absolute;
+      top: 180px;
+      left: 470px;
+      z-index: 9999;
+      line-height: 1.2;
+      h2 {
+        font-size: 2.2em;
+        font-weight: 700;
+        margin: 10px 0;
+      }
+      p {
+        font-size: 1.2em;
+        margin: 10px 0;
+      }
+    }
+
+    ul {
+      width: 70%;
+      position: absolute;
+      bottom: -50px;
+      left: 50%;
+      transform: $XCenter;
+      width: 70%;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      z-index: 9;
+      li a {
+        width: 260px;
+        height: 100px;
+        color: #fff;
+        background-color: $color-beige;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        transition: 0.2s;
+
+        &:hover {
+          color: $color-beige-hover;
+          background-color: $bg-beige-hover;
+          transform: translateY(-10px);
+        }
+
+        h3 {
+          font-size: 1.2em;
+          line-height: 1.5;
+          margin-left: 10px;
+          span {
+            display: block;
+            font-size: 0.7em;
+          }
+        }
+        .material-symbols-outlined {
+          font-size: 2.5em;
+        }
+      }
+    }
+  }
+}

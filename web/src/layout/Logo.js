@@ -2,12 +2,10 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  grid-row: 2/3;
-  grid-column: 1/2;
-  a {
-    height: 7vh;
-    margin-right: auto;
-  }
+  width: 23%;
+  text-align: right;
+  padding-right: 40px;
+  float: left;
 `;
 
 function Logo(props) {

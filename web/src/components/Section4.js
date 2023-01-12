@@ -33,9 +33,6 @@ const Container = styled.div`
       span {
         font-size: 3em;
         color: #a0937d;
-        &:hover {
-          color: #fff;
-        }
       }
       h4 {
         font-size: 1.3em;
@@ -50,6 +47,9 @@ const Container = styled.div`
         background-color: var(--color-beige);
         transform: translateY(-10px);
         background-color: #a0937d;
+        span {
+          color: #fff;
+        }
       }
     }
   }

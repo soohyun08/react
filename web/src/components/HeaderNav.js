@@ -1,25 +1,25 @@
 import styled from "styled-components";
 
 const Container = styled.div`
+  margin: 10px auto;
+  width: 70%;
   display: flex;
   justify-content: flex-end;
   text-align: center;
   align-items: center;
 
-  grid-row: 1/2;
-  grid-column: 2/4;
   ul {
     display: flex;
     li {
       margin-right: 10px;
       a {
-        font-size: 0.7em;
+        font-size: 0.8em;
         color: #fff;
-        background-color: rgb(178, 164, 132);
-        padding: 6px 9px;
+        background-color: #a0937d;
+        padding: 6px 10px;
       }
       &:nth-child(2) a {
-        background-color: rgb(10, 89, 10);
+        background-color: #3a6351;
       }
     }
   }

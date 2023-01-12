@@ -55,6 +55,7 @@ function Section5(props) {
   return (
     <>
       <div className="section5Txt">
+        <div className="section5Dots"></div>
         <h2>
           <span>우리집을 밝게 빛내 줄</span>
           <br />

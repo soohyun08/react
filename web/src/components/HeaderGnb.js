@@ -29,20 +29,25 @@ const GnbLis = [
 ];
 
 const Container = styled.div`
-  grid-row: 2/3;
-  grid-column: 2/4;
-  margin-right: 10px;
-  position: relative;
+  width: 55%;
+  margin: 0 auto 30px;
+  float: left;
+
   ul {
     display: flex;
-    justify-content: center;
-    li {
-      margin: 10px 20px;
+    justify-content: flex-end;
+    align-items: center;
 
+    li {
+      height: 44px;
+      display: flex;
+      align-items: flex-end;
+      margin: 0 20px;
       a {
         text-align: center;
         height: 30px;
         line-height: 30px;
+        color: gray;
         svg {
           width: 10px;
           margin: 0 10px;
