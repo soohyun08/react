@@ -1,0 +1,53 @@
+.mainSwiper {
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    top: 53%;
+    bottom: 0;
+    left: 440px;
+    width: 150px;
+  }
+  .swiper-pagination-bullet {
+    background-color: #fff;
+    width: 13px;
+    height: 13px;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    margin: 0 10px;
+  }
+  .swiper-pagination-bullet-active {
+    width: 50px;
+    border-radius: 10px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 56%;
+  }
+  .swiper-button-prev {
+    left: 600px;
+    right: 0;
+  }
+  .swiper-button-next {
+    left: 630px;
+    right: 0;
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 15px;
+    color: #fff;
+  }
+
+  .bg {
+    height: 60vh;
+    background-color: #ddd;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+    &.bg2 {
+      background: url(../assets/images/img1.png) no-repeat 50% / cover;
+    }
+  }
+}

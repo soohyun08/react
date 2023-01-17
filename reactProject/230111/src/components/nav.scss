@@ -1,0 +1,25 @@
+// 변수
+$objCenter: 50px auto;
+$orange: orange;
+
+.globalNavBar {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  padding: 0;
+  background-color: $orange;
+  margin: 0;
+  a {
+    display: block;
+    padding: 10px;
+    &:hover {
+      color: #fff;
+    }
+    svg {
+      fill: tomato;
+      vertical-align: middle;
+      margin-right: 8px;
+      width: 16px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+body * {
+  box-sizing: border-box;
+}
+.wrapper {
+  margin: 20px auto;
+  width: 90vw;
+  border: 1px solid #000;
+}
+.border {
+  border-top: 3px solid #000;
+}
+h1,
+h2 {
+  padding: 60px;
+  margin: 0;
+}
+footer {
+  background-color: sandybrown;
+  color: #fff;
+  height: 20vh;
+  text-align: center;
+}
+
+:global .bg {
+  background-color: seagreen;
+  color: #fff;
+}
