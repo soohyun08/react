@@ -1,0 +1,44 @@
+.mainService {
+  margin: 70px 0 40px;
+
+  .swiper {
+    height: 530px;
+    /*     transform: translateY(100px);
+    transition: 0.7s;
+    opacity: 0; */
+
+    .serviceImg {
+      height: 28vw;
+      padding-bottom: 20px;
+      box-shadow: 0px 1.2px 2.2px rgba(0, 0, 0, 0.02),
+        0px 3px 5.3px rgba(0, 0, 0, 0.028), 0px 5.6px 10px rgba(0, 0, 0, 0.035),
+        0px 10.1px 17.9px rgba(0, 0, 0, 0.042),
+        0px 18.8px 33.4px rgba(0, 0, 0, 0.05), 0px 45px 80px rgba(0, 0, 0, 0.07);
+
+      transition: 0.5s;
+      opacity: 0.4;
+
+      &.swiper-slide-active {
+        transform: scale(1.1);
+        opacity: 1;
+      }
+      img {
+        width: 100%;
+        height: 20vw;
+        object-fit: cover;
+      }
+      h3 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding: 20px 20px 0;
+      }
+      p {
+        padding: 10px 20px 20px;
+      }
+      &.active {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  }
+}
