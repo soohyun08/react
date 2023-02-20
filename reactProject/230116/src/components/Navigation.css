@@ -1,0 +1,53 @@
+@charset "UTF-8";
+.navigation {
+  display: flex;
+}
+.navigation .globalNav {
+  display: flex;
+}
+.navigation .globalNav li {
+  position: relative; /* 소메뉴 포지션 기준 */
+}
+.navigation .globalNav li a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.15rem;
+  padding: 0 20px;
+  height: 60px;
+  line-height: 60px;
+  transition: 0.3s;
+}
+.navigation .globalNav li a:hover {
+  background-color: #000;
+  color: #fff;
+}
+.navigation .globalNav li .subMenu {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: #fff;
+  width: 120px;
+  position: absolute;
+  top: 60px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: 0.3s;
+}
+.navigation .globalNav li:hover .subMenu {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0);
+}
+.navigation .registry {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.navigation .registry a {
+  margin: 0 10px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.navigation .registry a:hover {
+  color: red;
+}

@@ -1,0 +1,104 @@
+.section1 {
+  margin: 80px 0 130px;
+}
+.section1 .swiper-horizontal > .swiper-pagination-bullets,
+.section1 .swiper-pagination-bullets.swiper-pagination-horizontal {
+  top: 53%;
+  bottom: 0;
+  left: 440px;
+  width: 150px;
+}
+.section1 .swiper-pagination-bullet {
+  background-color: #fff;
+  width: 13px;
+  height: 13px;
+}
+.section1 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.section1 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 10px;
+}
+.section1 .swiper-pagination-bullet-active {
+  width: 50px;
+  border-radius: 10px;
+}
+.section1 .swiper-button-next,
+.section1 .swiper-button-prev {
+  top: 54%;
+  padding: 0 5px;
+}
+.section1 .swiper-button-prev {
+  left: 570px;
+  right: 0;
+}
+.section1 .swiper-button-next {
+  left: 600px;
+  right: 0;
+}
+.section1 .swiper-button-next:after,
+.section1 .swiper-button-prev:after {
+  padding: 10px;
+  font-size: 15px;
+  color: #fff;
+}
+.section1 .swiper-slide img {
+  width: 100%;
+}
+.section1 article {
+  position: relative;
+}
+.section1 article .txt {
+  color: #fff;
+  position: absolute;
+  top: 180px;
+  left: 470px;
+  z-index: 99;
+  line-height: 1.2;
+}
+.section1 article .txt h2 {
+  font-size: 2.2em;
+  font-weight: 700;
+  margin: 10px 0;
+}
+.section1 article .txt p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+.section1 article ul {
+  width: 70%;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 9;
+}
+.section1 article ul li a {
+  width: 260px;
+  height: 100px;
+  color: #fff;
+  background-color: #a0937d;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: 0.2s;
+}
+.section1 article ul li a:hover {
+  color: #b9af9f;
+  background-color: #e6e3dd;
+  transform: translateY(-10px);
+}
+.section1 article ul li a h3 {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-left: 10px;
+}
+.section1 article ul li a h3 span {
+  display: block;
+  font-size: 0.7em;
+}
+.section1 article ul li a .material-symbols-outlined {
+  font-size: 2.5em;
+}

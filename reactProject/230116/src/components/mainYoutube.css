@@ -1,0 +1,33 @@
+@charset "UTF-8";
+.mainYoutube {
+  background-color: #eee;
+  padding: 50px 0;
+}
+.mainYoutube .mainYoutubeInner {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+.mainYoutube .mainYoutubeInner h2 {
+  font-size: 3.1rem;
+  font-weight: 800;
+  width: 30%;
+}
+.mainYoutube .mainYoutubeInner p {
+  width: 60%;
+}
+.mainYoutube .mainYoutubeInner .youtubeBox {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /*16:9 비율 영상. */
+  position: relative;
+  margin: 30px auto;
+  overflow: hidden;
+}
+.mainYoutube .mainYoutubeInner .youtubeBox iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}

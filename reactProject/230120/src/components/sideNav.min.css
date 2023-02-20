@@ -1,0 +1,1 @@
+.sideNav{position:fixed;top:50%;transform:translateY(-50%);right:40px}.sideNav li{width:20px;height:20px;background-color:#fff;text-indent:-9999px;border-radius:50%;margin:16px;cursor:pointer;transition:.5s}.sideNav li.on{background-color:#f08080}

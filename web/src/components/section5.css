@@ -1,0 +1,90 @@
+.section5Txt {
+  width: 70%;
+  margin: 130px auto 50px;
+  position: relative;
+}
+.section5Txt .section5Dots {
+  background: url(../assets/images/bg_dot_gray.png) no-repeat 50%/contain;
+  width: 220px;
+  height: 220px;
+  position: absolute;
+  top: -10vh;
+  left: -13vh;
+}
+.section5Txt h2 {
+  line-height: 1.3;
+  font-size: 36px;
+}
+.section5Txt h2 span {
+  font-size: 18px;
+}
+.section5Txt h2 strong {
+  font-weight: 600;
+  margin-left: 15px;
+  margin-bottom: 40px;
+}
+
+.section5 {
+  width: 75%;
+  padding: 0 20px;
+  padding-bottom: 150px;
+}
+.section5 .SwiperSlide {
+  cursor: pointer;
+  width: 300px;
+  background: var(--bg-cover);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  z-index: 9;
+  transition: 0.2s;
+}
+.section5 .SwiperSlide:hover {
+  transform: translateY(-10px);
+  color: #b9af9f;
+}
+.section5 .SwiperSlide img {
+  width: 270px;
+}
+.section5 .SwiperSlide p {
+  width: 240px;
+  height: 70px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -20px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+}
+.section5 .SwiperSlide p span {
+  padding: 15px 0 0;
+}
+.section5 .swiper-button-prev,
+.section5 .swiper-button-next {
+  color: #222;
+  top: 35%;
+}
+.section5 .swiper-button-prev:after,
+.section5 .swiper-button-next:after {
+  font-size: 30px;
+}
+.section5 .swiper-horizontal > .swiper-pagination-progressbar,
+.section5 .swiper-pagination-progressbar.swiper-pagination-horizontal,
+.section5 .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
+.section5 .swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+  width: 91%;
+  left: 50%;
+  transform: translatex(-50%);
+}
+.section5 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background-color: #222;
+}
+.section5 .swiper-horizontal > .swiper-pagination-progressbar,
+.section5 .swiper-pagination-progressbar.swiper-pagination-horizontal,
+.section5 .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
+.section5 .swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+  top: 370px;
+}

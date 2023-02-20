@@ -1,0 +1,21 @@
+.globalNavBar {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  padding: 0;
+  background-color: orange;
+  margin: 0;
+}
+.globalNavBar a {
+  display: block;
+  padding: 10px;
+}
+.globalNavBar a:hover {
+  color: #fff;
+}
+.globalNavBar a svg {
+  fill: tomato;
+  vertical-align: middle;
+  margin-right: 8px;
+  width: 16px;
+}

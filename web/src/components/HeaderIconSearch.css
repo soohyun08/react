@@ -1,0 +1,21 @@
+.HeaderIconSearchStyle {
+  border-top: 1px solid rgb(232, 232, 232);
+  z-index: 999;
+  width: 100%;
+  height: 6vh;
+  background-color: #fff;
+  position: absolute;
+  top: 110px;
+  left: 0;
+  padding: 1vh 0;
+  display: flex;
+  justify-content: center;
+  color: rgb(94, 94, 94);
+}
+.HeaderIconSearchStyle input {
+  width: 70%;
+  text-align: right;
+  font-size: 1.8em;
+  border: none;
+  outline: none;
+}

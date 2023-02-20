@@ -1,0 +1,129 @@
+@charset "UTF-8";
+.mainGallery {
+  display: grid;
+  grid-auto-rows: 23vw;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+.mainGallery h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+  transform: translateY(-30px);
+  opacity: 0;
+}
+.mainGallery .bg1 {
+  background: url("../assets/images/gallery1.jpg") no-repeat 50%/cover;
+  overflow: hidden;
+}
+.mainGallery .bg1:hover h3 {
+  opacity: 1;
+  transform: translateY(0);
+  -webkit-backdrop-filter: grayscale(70%) blur(5px);
+          backdrop-filter: grayscale(70%) blur(5px); /* 해당 요소 제외하고 필터 */
+}
+.mainGallery .bg1 {
+  grid-row: 1/3;
+}
+.mainGallery .bg4 {
+  grid-column: 2/4;
+}
+.mainGallery .bg2 {
+  background: url("../assets/images/gallery2.jpg") no-repeat 50%/cover;
+  overflow: hidden;
+}
+.mainGallery .bg2:hover h3 {
+  opacity: 1;
+  transform: translateY(0);
+  -webkit-backdrop-filter: grayscale(70%) blur(5px);
+          backdrop-filter: grayscale(70%) blur(5px); /* 해당 요소 제외하고 필터 */
+}
+.mainGallery .bg1 {
+  grid-row: 1/3;
+}
+.mainGallery .bg4 {
+  grid-column: 2/4;
+}
+.mainGallery .bg3 {
+  background: url("../assets/images/gallery3.jpg") no-repeat 50%/cover;
+  overflow: hidden;
+}
+.mainGallery .bg3:hover h3 {
+  opacity: 1;
+  transform: translateY(0);
+  -webkit-backdrop-filter: grayscale(70%) blur(5px);
+          backdrop-filter: grayscale(70%) blur(5px); /* 해당 요소 제외하고 필터 */
+}
+.mainGallery .bg1 {
+  grid-row: 1/3;
+}
+.mainGallery .bg4 {
+  grid-column: 2/4;
+}
+.mainGallery .bg4 {
+  background: url("../assets/images/gallery4.jpg") no-repeat 50%/cover;
+  overflow: hidden;
+}
+.mainGallery .bg4:hover h3 {
+  opacity: 1;
+  transform: translateY(0);
+  -webkit-backdrop-filter: grayscale(70%) blur(5px);
+          backdrop-filter: grayscale(70%) blur(5px); /* 해당 요소 제외하고 필터 */
+}
+.mainGallery .bg1 {
+  grid-row: 1/3;
+}
+.mainGallery .bg4 {
+  grid-column: 2/4;
+}
+.mainGallery .bg5 {
+  background: url("../assets/images/gallery5.jpg") no-repeat 50%/cover;
+  overflow: hidden;
+}
+.mainGallery .bg5:hover h3 {
+  opacity: 1;
+  transform: translateY(0);
+  -webkit-backdrop-filter: grayscale(70%) blur(5px);
+          backdrop-filter: grayscale(70%) blur(5px); /* 해당 요소 제외하고 필터 */
+}
+.mainGallery .bg1 {
+  grid-row: 1/3;
+}
+.mainGallery .bg4 {
+  grid-column: 2/4;
+}
+.mainGallery .bg6 {
+  background: url("../assets/images/gallery6.jpg") no-repeat 50%/cover;
+  overflow: hidden;
+}
+.mainGallery .bg6:hover h3 {
+  opacity: 1;
+  transform: translateY(0);
+  -webkit-backdrop-filter: grayscale(70%) blur(5px);
+          backdrop-filter: grayscale(70%) blur(5px); /* 해당 요소 제외하고 필터 */
+}
+.mainGallery .bg1 {
+  grid-row: 1/3;
+}
+.mainGallery .bg4 {
+  grid-column: 2/4;
+}
+.mainGallery .bg7 {
+  background: url("../assets/images/gallery7.jpg") no-repeat 50%/cover;
+  overflow: hidden;
+}
+.mainGallery .bg7:hover h3 {
+  opacity: 1;
+  transform: translateY(0);
+  -webkit-backdrop-filter: grayscale(70%) blur(5px);
+          backdrop-filter: grayscale(70%) blur(5px); /* 해당 요소 제외하고 필터 */
+}
+.mainGallery .bg1 {
+  grid-row: 1/3;
+}
+.mainGallery .bg4 {
+  grid-column: 2/4;
+}
